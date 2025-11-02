@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Museion - Confirmação de Compra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4CAF50",
+            "background-light": "#f7f6f8",
+            "background-dark": "#1c1022",
+            "text-light": "#1A1A1A",
+            "text-dark": "#FFFFFF",
+            "card-light": "#FFFFFF",
+            "card-dark": "#2a1a33",
+            "border-light": "#E0E0E0",
+            "border-dark": "#3c2a47"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- TopAppBar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-border-light dark:border-border-dark">
+<div class="flex size-12 shrink-0 items-center justify-start" data-icon="Placeholder" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined text-primary text-3xl">
+          confirmation_number
+        </span>
+</div>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Museion</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">
+            close
+          </span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full grow px-4 py-6 sm:px-6 lg:px-8">
+<div class="max-w-2xl mx-auto flex flex-col items-center">
+<!-- Success Icon -->
+<div class="flex items-center justify-center size-20 rounded-full bg-primary/20 mb-6">
+<span class="material-symbols-outlined text-primary text-5xl">
+            check_circle
+          </span>
+</div>
+<!-- HeadlineText -->
+<h2 class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight text-center pb-3">Compra Realizada com Sucesso!</h2>
+<!-- BodyText -->
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal pb-8 px-4 text-center">Seus ingressos foram enviados para o seu e-mail. Guarde-os com segurança.</p>
+<!-- Order Summary Card -->
+<div class="w-full bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<!-- Event Section -->
+<div class="p-4 sm:p-6">
+<div class="flex items-stretch justify-between gap-4">
+<div class="flex flex-col gap-1 flex-[2_2_0px]">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Evento</p>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-tight">Exposição de Arte Abstrata</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">15 de Dezembro, 2024 - 19:00</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Museu de Arte Moderna</p>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex-1" data-alt="Imagem abstrata colorida representando a exposição de arte." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwbm8tcIBg3ct_dzYdLNQMYvovWSx47vltCZ-POfrnfMhaepM72Wl3WHInKEg-XBg9KjAHAbHHeAktxR-7idCQ-CAFjxGlJsX_b5btbwbds3pLEru6eNLxl2b0TxYTIHVa1Jfxf11V0pud6IPkB2quzWECe-K_5aloC18UpkvHaPcv6joChnKr6NFwTteY164xk3lrh1e_wOFUVIeQam33AJP84L652YnNtd5ehj7QX1DUJS9CD3nTxI9wqDYLOLGHPkyesvKRqrU");'></div>
+</div>
+</div>
+<hr class="border-border-light dark:border-border-dark"/>
+<!-- Tickets Section -->
+<div class="p-4 sm:p-6">
+<h3 class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mb-3">Ingressos</h3>
+<div class="flex justify-between items-center">
+<p class="text-text-light dark:text-text-dark text-base font-normal">2x Ingresso Inteira</p>
+<p class="text-text-light dark:text-text-dark text-base font-bold">R$ 100,00</p>
+</div>
+</div>
+<hr class="border-border-light dark:border-border-dark"/>
+<!-- Payment Section -->
+<div class="p-4 sm:p-6">
+<div class="flex justify-between items-center">
+<p class="text-text-light dark:text-text-dark text-base font-bold">Valor Total</p>
+<p class="text-primary text-lg font-bold">R$ 100,00</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">Pago com Cartão de Crédito</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">final **** 1234</p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full mt-8 flex flex-col space-y-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined">
+              article
+            </span>
+            Ver Ingressos
+          </button>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] ring-1 ring-primary">
+            Voltar ao Início
+          </button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

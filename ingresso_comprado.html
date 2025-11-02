@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html class="" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Seu Ingresso - Museion</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00204A", 
+            "secondary": "#F0B435", 
+            "background-light": "#F9F9F9",
+            "background-dark": "#1c1022", 
+            "text-light-primary": "#333333",
+            "text-light-secondary": "#555555",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<!-- Top App Bar -->
+<header class="flex items-center bg-background-light p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200">
+<button class="flex size-10 shrink-0 items-center justify-center text-primary">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Seu Ingresso</h1>
+<div class="size-10 shrink-0"></div>
+</header>
+<main class="flex flex-col p-4 sm:p-6 md:p-8">
+<div class="mx-auto w-full max-w-md">
+<!-- Ticket Card -->
+<div class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+<!-- Event Image -->
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover aspect-auto" data-alt="Imagem abstrata da Exposição de Arte Renascentista" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxtTMnrWexEsbNW1ZmBuJHGKSFOZ4bT_9L50v8A9PAARne2V2mbK7ouC4KTj1gD09-735ir2dV3-EZCeMrP6xJWwWLGsS7s1ZKAd-ncGr5uaeoMrIBAfIBJHqs5oMZzJnItL1x4npmdCOt6H7_qrOJq_YgB5_sVqT1hjaDLtYV5kArknP9nyjtkEIBFGRNxtpIbgDw5GqkLJXhxYVaUyS5hTkPH2xOVtt9zVbDExATzw-QNNvDyLm1NzErmhoo7IM8DMw1A925DFs");'></div>
+<div class="p-5 md:p-6">
+<!-- Event Title -->
+<h2 class="text-primary tracking-tight text-2xl font-bold leading-tight text-left pb-4">Exposição de Arte Renascentista</h2>
+<!-- Event Details List -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<div class="flex flex-col">
+<p class="text-text-light-primary text-base font-medium leading-normal flex-1">Sábado, 25 de Outubro</p>
+<p class="text-text-light-secondary text-sm font-normal">14:00 - 18:00</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col">
+<p class="text-text-light-primary text-base font-medium leading-normal flex-1">Museion</p>
+<p class="text-text-light-secondary text-sm font-normal">Av. Principal, 123</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="border-t border-dashed border-gray-300 my-6"/>
+<!-- QR Code Section -->
+<div class="flex flex-col items-center gap-4">
+<div class="w-48 h-48 md:w-52 md:h-52 p-3 border border-gray-200 rounded-lg bg-white">
+<img alt="QR Code do ingresso" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq6uLJpN1wNHvrkMernt6wS1ik0FArDt-EP0nBXViBvfb2a6Pm1lZ4UmMPYnlerhA7lQwme7uW-nS2K-xkS1Lk3VJoAQGKiE6lkl36kYRv91aG4QuQQ19dcRUZRjN827j7i02xtxytahiVys9DmrUdIR49kguCgOWdcKlu0tpXpzui33o8uPof6FU5WguLWzQ7jZTkMuEteqE0-W32Vn_7QqnSlgmIY-ge2gbB9cu1idMo3hMoA0nsjTDw5-BHm_uh4K8PP4nIOeY"/>
+</div>
+<p class="text-text-light-secondary text-sm font-mono tracking-widest">1234-5678-9012-3456</p>
+</div>
+<hr class="border-t border-dashed border-gray-300 my-6"/>
+<!-- Ticket Holder Details -->
+<div class="grid grid-cols-2 gap-x-4 gap-y-5 text-left">
+<div>
+<p class="text-xs text-text-light-secondary uppercase font-semibold">Titular</p>
+<p class="text-base text-text-light-primary font-medium">Alex Silva</p>
+</div>
+<div>
+<p class="text-xs text-text-light-secondary uppercase font-semibold">Tipo de Ingresso</p>
+<p class="text-base text-text-light-primary font-medium">Inteira</p>
+</div>
+<div>
+<p class="text-xs text-text-light-secondary uppercase font-semibold">Setor</p>
+<p class="text-base text-text-light-primary font-medium">Galeria Principal</p>
+</div>
+<div>
+<p class="text-xs text-text-light-secondary uppercase font-semibold">Assento</p>
+<p class="text-base text-text-light-primary font-medium">A12</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="mt-6">
+<button class="flex items-center justify-center gap-3 w-full h-12 px-6 bg-primary text-white rounded-lg text-base font-bold transition-opacity hover:opacity-90">
+<span class="material-symbols-outlined">wallet</span>
+                Salvar no Celular
+            </button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

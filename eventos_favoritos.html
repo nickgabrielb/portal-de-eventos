@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html class="" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meus Favoritos - Museion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ad2bee",
+            "background-light": "#f7f6f8",
+            "background-dark": "#1c1022",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 pb-3 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white">Meus Favoritos</h1>
+<div class="size-10 shrink-0"></div> <!-- Spacer -->
+</header>
+<!-- Main Content -->
+<main class="flex flex-1 flex-col p-4 pt-2">
+<div class="flex w-full max-w-4xl mx-auto flex-col gap-4">
+<!-- Favorite Event Cards -->
+<div class="flex cursor-pointer items-stretch justify-between gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-zinc-900/50">
+<div class="w-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="Abstract art piece with vibrant colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCivHyBVPTQ0zhXGZlI_b6GcZtrimnny2zkFLjmMPrvTZlWpcsipKnZe9HkNZFhbh3AyZPPkcM71n0Q7HrHbR8xvfusbYM9Pa9ZN7BxF00Z_48d1867ymMk3V_SCK861Wojx0hVrMhhkfVdTdvWRQrVpHQvF_4c-ToYriUiebn_Yws2m2d9SEKvvezQAj1UGT5EJejvSCUhPamDXH9NwBHcjZhzEAb_CHoykbki9dgw_j1LoZTF9mToPFOzFV27ZUgeubNg-E_9srA");'></div>
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-sm font-normal text-primary dark:text-primary/90">10 de Agosto, 19:00</p>
+<p class="text-base font-bold leading-tight text-zinc-900 dark:text-white">Exposição de Arte Moderna</p>
+<p class="text-sm font-normal text-zinc-600 dark:text-zinc-400">Museu de Arte Contemporânea</p>
+</div>
+<button class="flex shrink-0 items-center justify-center p-2 text-[#FFD700]">
+<span class="material-symbols-outlined text-2xl">star</span>
+</button>
+</div>
+<div class="flex cursor-pointer items-stretch justify-between gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-zinc-900/50">
+<div class="w-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="A jazz band performing on stage with saxophones and dim lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGqJPVNr3iCBVVu5nppapHEQxdDrcjgBnZJS5J23oawEfySTvBOsd7OYkYifeoklQxhUd8MXsfEIYcw08kHnrSjdvfqm2r2BN4TgRemsj55YqghWl5oVRspDF42mJGijT0DL09bBj_iIxC4rR3VNv1TZZcyr-YJdZeFq7BKIyILucFAdI-JpH6ivcreAkR7pdNhJgC0dc8txc7CY3WObEuX0RixAzwKA_P9NbltskQUuq8t5stdBKjcZ1DkrR4hz6L-cqZ-fEth_8");'></div>
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-sm font-normal text-primary dark:text-primary/90">15 de Setembro, 20:30</p>
+<p class="text-base font-bold leading-tight text-zinc-900 dark:text-white">Concerto de Jazz ao Vivo</p>
+<p class="text-sm font-normal text-zinc-600 dark:text-zinc-400">Auditório Central</p>
+</div>
+<button class="flex shrink-0 items-center justify-center p-2 text-[#FFD700]">
+<span class="material-symbols-outlined text-2xl">star</span>
+</button>
+</div>
+<div class="flex cursor-pointer items-stretch justify-between gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-zinc-900/50">
+<div class="w-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="Hands molding clay on a potter's wheel" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGaP3fe7bnCLZDRfrJnyetkczSEmvTySsx9Gzi9IwUfdPah2X_MN1YE-WWlMJ0R8zxFjhuk5RdTsl4cPzU31FdOrn_E4QinAiQfxnB3fmQ5EgOGboi4vM2Ro2xwl5qxU41Yfv5q2dAB-BNGYnanN0x0yFDI3PYV4mNzIVEiVcpeM8rKgJk9errFGYery5d9MrjRDoGaKAde7H0wo9qW9TABfAJ-gfil7WZRjpSem73V2Ml4GLDrAfLS-waZ8PdXlHCzL20cUoU1_g");'></div>
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-sm font-normal text-primary dark:text-primary/90">22 de Setembro, 14:00</p>
+<p class="text-base font-bold leading-tight text-zinc-900 dark:text-white">Oficina de Escultura</p>
+<p class="text-sm font-normal text-zinc-600 dark:text-zinc-400">Galeria de Artes Visuais</p>
+</div>
+<button class="flex shrink-0 items-center justify-center p-2 text-[#FFD700]">
+<span class="material-symbols-outlined text-2xl">star</span>
+</button>
+</div>
+<!-- Empty State Example (commented out for demonstration) -->
+<!-- 
+        <div class="flex flex-col items-center gap-6 px-4 py-16 text-center">
+          <div class="flex items-center justify-center text-zinc-400 dark:text-zinc-500">
+            <span class="material-symbols-outlined" style="font-size: 80px; font-variation-settings: 'FILL' 0, 'wght' 200;">star_outline</span>
+          </div>
+          <div class="flex max-w-sm flex-col items-center gap-2">
+            <p class="text-lg font-bold leading-tight text-zinc-900 dark:text-white">Nenhum favorito encontrado</p>
+            <p class="text-sm font-normal text-zinc-600 dark:text-zinc-400">Você ainda não tem eventos favoritos. Explore e encontre os seus preferidos!</p>
+          </div>
+          <button class="flex min-w-[84px] max-w-xs cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] w-full">
+            <span class="truncate">Explorar Eventos</span>
+          </button>
+        </div>
+        -->
+</div>
+</main>
+</div>
+</body></html>

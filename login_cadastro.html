@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Museion - Acesso</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#6B46C1", // Roxo Museion
+            "background-light": "#F7FAFC",
+            "text-primary": "#1A202C",
+            "text-secondary": "#4A5568",
+            "border-color": "#E2E8F0",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center bg-background-light p-4 group/design-root overflow-x-hidden">
+<div class="w-full max-w-sm mx-auto">
+<div class="flex flex-col justify-center items-center gap-4 mb-8">
+<img alt="Museion Logo" class="h-16 w-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqKd-wDhPO-0mYQ6tXFB9VFyXsfAUKdrYpbL9_R0JD-uyGzDzqg9pt9FVvVhP4ypTBviykoM3BBb12Vn7yBf_merFY3ac0k9jLsw369YjWeieC8BtA3K6EUUpalJ7VP5mFleKVv_Wcia4PBvQM1g3psoXgBcXReOOpTsqqDPK6GjkMsNC0marixbMOPGZLaEdCyWK2uc8uAyazHVIuVPhwGYh-HHq2-dLJJ-ZLWk9zioyEkDrD3_wwW9wE0jIlp6ki8P-qEueCryY"/>
+<span class="text-3xl font-bold tracking-tight text-text-primary">Museion</span>
+</div>
+<div class="text-left w-full mb-6">
+<h1 class="text-text-primary tracking-tight text-3xl font-bold leading-tight">Acesse sua conta</h1>
+<p class="text-text-secondary text-base font-normal leading-normal pt-1">Bem-vindo! Faça login ou cadastre-se para continuar.</p>
+</div>
+<form class="space-y-4">
+<div class="flex flex-col">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-text-primary text-sm font-medium leading-normal pb-2">CPF</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-4 text-base font-normal leading-normal transition-colors" placeholder="000.000.000-00" type="text" value=""/>
+</label>
+</div>
+<div class="flex flex-col">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-text-primary text-sm font-medium leading-normal pb-2">E-mail</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-4 text-base font-normal leading-normal transition-colors" placeholder="seuemail@exemplo.com" type="email" value=""/>
+</label>
+</div>
+<div class="flex flex-col">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-text-primary text-sm font-medium leading-normal pb-2">Senha</p>
+<div class="relative flex w-full flex-1 items-stretch rounded-lg">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-4 pr-12 text-base font-normal leading-normal transition-colors" placeholder="Sua senha" type="password" value=""/>
+<button class="absolute inset-y-0 right-0 flex items-center justify-center px-4 text-text-secondary/70 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-2xl">visibility</span>
+</button>
+</div>
+</label>
+</div>
+<div class="flex justify-end w-full pt-1">
+<a class="text-sm font-medium text-primary hover:underline" href="#">Esqueceu sua senha?</a>
+</div>
+<div class="flex flex-col sm:flex-row gap-3 pt-4">
+<button class="flex w-full items-center justify-center rounded-lg border border-primary h-14 px-6 text-base font-bold text-primary shadow-sm hover:bg-primary/5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light transition-colors">Cadastrar</button>
+<button class="flex w-full items-center justify-center rounded-lg bg-primary h-14 px-6 text-base font-bold text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light transition-colors">Entrar</button>
+</div>
+</form>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minha Conta - Museion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6A26B4",
+                        "background-light": "#F8F7FA",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light p-4 pb-2 justify-between sticky top-0 z-10">
+<img alt="Museion logo" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpvBvBjR14qHEJhOX3qbdru5UQ0NjwTeUfWXgFNr6aYcGRXAl4xIPoREpakZU-qYAiUYSPhTnOnFsFEeUBNDYBV_bMQWFsRB1WX3vZ08TunOvYk-5yrueoa19axnn5xDC3B0zNQ5WFr3M6Sfnb1OZZhfZC0nSNQv0epxfdHVgmRFwYRyajAsezx-5BtT9RTEYEIJ43mnv8vQBHm8Alj50CMe_17BxwkJHmbpvQOKp_7YQrkr9PE8uMgCjy-Qxor5nqt379o4bnknA"/>
+<h1 class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Museion</h1>
+<div class="flex size-12 shrink-0 items-center justify-center text-gray-800">
+<span class="material-symbols-outlined">settings</span>
+</div>
+</div>
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-4 items-start">
+<div class="flex gap-4 flex-col items-start w-full">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4HzGn4IojkCkgt_6BsNiMlHv2_8bDuo_ZDZjUKdkRLVkqQZouy_rbvDyJtoufSsR0BzCE6xoYezFyBAqeeFXjvw5qQUi9YLbT0TCqJQW49Fiapp7UcZxdV-WOGd5mmwOh6QBwxer3TPGypKZI3YMNRsqyD98kNpsj3rZF75RfktC0wK66dxug2-MlHoOjIWBwljNu3fACQI8BO8lbB-5Y2G3CQMHkRg6MrukP7AYKE15aHFwPEyMcuULpn33Ya3arJ5AJwvVpQEQ");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 text-[22px] font-bold leading-tight tracking-[-0.015em]">Nome do Usuário</p>
+<p class="text-gray-500 text-base font-normal leading-normal">usuario@email.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex px-4 py-3 sticky top-[72px] bg-background-light z-10">
+<div class="flex h-10 flex-1 items-center justify-center rounded-lg bg-gray-200 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_1px_3px_rgba(0,0,0,0.1)] has-[:checked]:text-gray-900 text-gray-500 text-sm font-medium leading-normal transition-colors duration-200">
+<span class="truncate">Meus Ingressos</span>
+<input checked="" class="invisible w-0" name="profile-tabs" type="radio" value="Meus Ingressos"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_1px_3px_rgba(0,0,0,0.1)] has-[:checked]:text-gray-900 text-gray-500 text-sm font-medium leading-normal transition-colors duration-200">
+<span class="truncate">Favoritos</span>
+<input class="invisible w-0" name="profile-tabs" type="radio" value="Eventos Favoritos"/>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="px-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden @xl:flex-row @xl:items-start shadow-sm bg-white">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover @xl:w-48 @xl:h-auto @xl:aspect-square" data-alt="Vibrant concert with colorful lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsXAAZrNhclxX_TLaA8ZJfANjglCx9rZyT8AfdK5ay1f_dUCO48qH8AZFtcMMlToAgAXDe_PXzySFZz2RaD4xpEGKm9RnahTBVPdouKtZYBsdBRxAay_ke-Og5SyrDIpUMsYpApUJkeoUJaJe08LVEzW2l7Bi5u9eEDoulKZCVFZCeSLdABO5r7dyFOocyS_JoBTba7EaqyanWvKyNq34z0j_B4ldTBl6huom3QHu9f3aCBuLjruqfVK86OI6U3lIbJFBeZg1_bh8");'></div>
+<div class="flex w-full min-w-0 grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em]">Festival de Música Eletrônica</p>
+<div class="flex items-center gap-3 justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-gray-500 text-sm font-normal leading-normal">Sáb, 28 de Dezembro</p>
+<p class="text-primary text-sm font-medium leading-normal">Ver QR Code</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Detalhes</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden @xl:flex-row @xl:items-start shadow-sm bg-white">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover @xl:w-48 @xl:h-auto @xl:aspect-square" data-alt="Theater stage with red curtains" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZeqK9yy_tacLBNTgnLXfo_MW7YHthOFp56duvCahQIxImBqP78zL3coJMRh3S7ca7xivj2TxJNNmcvC9BFuYImd-zO4pkep63BWhYRUDnoe3nun4ymK5Fd2eCT_zuMsXcyDlyoDoNea2-2Irk8n6YKBmEbGhry9RnUiJX73t_Zyd97dNZK6wlsHPil4VQgdfcvHUlJY_isNCv4XvNPCHG-zt5x7n92EGnLyEo3Z7r88u10n5sUS8hgR_1zB_V6Pt9Bzcp2-dvfYE");'></div>
+<div class="flex w-full min-w-0 grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em]">Peça Teatral: O Fantasma</p>
+<div class="flex items-center gap-3 justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-gray-500 text-sm font-normal leading-normal">Qua, 15 de Janeiro</p>
+<p class="text-primary text-sm font-medium leading-normal">Ver QR Code</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Detalhes</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="pb-4"></div>
+</div>
+</div>
+
+</body></html>
